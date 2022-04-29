@@ -5,10 +5,6 @@ import java.util.*;
 
 public class Manager {
 
-//    private final List<String> purchaseName = new ArrayList<>();
-//    Można zrobić array of list
-
-
     private final Map<Integer, List<String>> purchaseTypes= Map.of(
             1, new ArrayList<>(), // Food
             2, new ArrayList<>(),  // Clothes
@@ -17,7 +13,7 @@ public class Manager {
     private double income;
     private double price;
     private double balance;
-//    final File file = new File("C:\\Users\\macie\\IdeaProjects\\Budget Manager\\Budget Manager\\task\\src\\budget\\purchases.txt");
+
     final File file = new File("purchases.txt");
 
     double getPrice() {
